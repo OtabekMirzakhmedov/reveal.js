@@ -1,40 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-auto-animate data-auto-animate-unmatched="fade">
+          <h3>File API</h3>
+        </section>
+        <section data-auto-animate data-auto-animate-unmatched="fade">
+          <h3>File API</h3>
+          <p>enables web applications to access files and their contents.</p>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            File Api interfaces
+            - Blob <!-- .element: class="fragment" data-fragment-index="2" -->
+            - File <!-- .element: class="fragment" data-fragment-index="1" -->
+            - FileList <!-- .element: class="fragment" data-fragment-index="3" -->
+            - FileReader <!-- .element: class="fragment" data-fragment-index="4" -->
+          </script>
+        </section>
+        <section><h1>2</h1></section>
+        <section data-markdown>
+          <script type="text/template">
+            <p>File object </p>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+							<input type="file"/>
+						</code></pre>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            File Object Properties
+            - name
+            - lastModified
+            - lastModifiedDate
+            - webkitRelativePath
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            FileList Object
+            - length
+            - item()
+          </script>
+        </section>
+                <section data-markdown>
+          <script type="text/template">
+            FileList Object
+            - length
+            - item()
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            FileReader Object methods
+            - abort()
+            - readAsArrayBuffer()
+            - readAsBinaryString()
+            - readAsDataURL()
+            - readAsText()
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            FileReader Object events
+            - abort
+            - error
+            - load
+            - loadend
+            - loadstart
+            - progress
+          </script>
+        </section>
+        <section>
+          <p>Thank you for your attention</p>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
